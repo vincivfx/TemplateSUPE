@@ -1,0 +1,42 @@
+\documentclass[a4paper, 12pt]{report}
+
+% impostazioni
+\newcommand{\titoloTesi}{Titolo della Tesina}
+\newcommand{\autoreTesi}{Nome Studente}
+\newcommand{\relatoreTesi}{Nome Relatore}
+
+
+% Importazione delle Librerie
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.6cm]{geometry} % margini
+\usepackage[italian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{amsthm}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{biblatex}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\floatname{algorithm}{Algoritmo}
+\addbibresource{bibliografia.bib}
+
+\begin{document}
+
+    \input{frontespizio.tex}
+
+    {\small\tableofcontents}
+
+    
+    % importare qui le varie parti utilizzando
+    % \input{file.tex}
+
+
+    {\small \printbibliography[title={Bibliografia}]}
+
+\end{document}
